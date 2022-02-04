@@ -1,0 +1,58 @@
+      // child: GridView.builder(
+                //   itemCount: drinksData['drinks'].length,
+                //   itemBuilder: (ctx, index) {
+                //     String id;
+                //     String image;
+                //     String name;
+
+                //     id = drinksData['drinks'][index]['idDrink'];
+                //     image = drinksData['drinks'][index]['strDrinkThumb'];
+                //     name = drinksData['drinks'][index]['strDrink'];
+
+                //     return GestureDetector(
+                //       onTap: () {
+                //         Navigator.of(context).push(
+                //           MaterialPageRoute(
+                //             builder: (ctx) => DetailFood(
+                //               screenSize: screenSize,
+                //               uname: widget.uname,
+                //               uemail: widget.uemail,
+                //               uimage: widget.uimage,
+                //               image: image,
+                //               title: name,
+                //               id: id,
+                //             ),
+                //           ),
+                //         );
+                //       },
+                //       child: SingleCardFood(
+                //         screenSize: screenSize,
+                //         image: image,
+                //         name: name,
+                //         price: double.parse(id), //I set the Drink id as price
+                //         onPressedBuy: () {
+                //           _buildModalSuccess(
+                //             context,
+                //             'Item Successfully Bought',
+                //             Colors.green,
+                //             Colors.white,
+                //           );
+                //         },
+                //         onPressedCart: () {
+                //           _buildModalSuccess(
+                //             context,
+                //             'Item Added To Cart',
+                //             customColors[30],
+                //             Colors.blue[100],
+                //           );
+                //         },
+                //       ),
+                //     );
+                //   },
+                //   scrollDirection: Axis.vertical,
+                //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                //     mainAxisSpacing: 1,
+                //     childAspectRatio: 0.7,
+                //     crossAxisCount: 2,
+                //   ),
+                // ),
